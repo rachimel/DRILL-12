@@ -25,6 +25,7 @@ def update_world():
 
 def reset_world():
     global boy
+    game_world.add_object(Grass(), 0)
     boy = Boy()
     game_world.add_object(Grass())
     game_world.add_object(boy)
