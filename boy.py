@@ -10,13 +10,12 @@ import game_world
 
 import os
 
-path = os.getcwd() + '\\Labs\\LEC12_CharacterController\\'
 
 class Boy:
     def __init__(self):
         self.x, self.y = 400, 90
         self.frame = 0
-        self.image = load_image(path + 'animation_sheet.png')
+        self.image = load_image('animation_sheet.png')
         self.idle_started_at = get_time()
         self.dir = 0
         self.face_dir = 1
